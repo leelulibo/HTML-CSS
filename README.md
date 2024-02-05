@@ -2,7 +2,7 @@
 
 # INTRODUCTION-TO-HTML 101
 
-# HTML SYNTAX ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+# HTML SYNTAX 
 1. **HTML Structure:**
    - HTML is a language used to structure web pages.
    - Tags, enclosed in less-than and greater-than symbols, mark different elements.
@@ -34,9 +34,7 @@
    - Proper opening and closing of tags are crucial to conveying content meaning.
 
 
-# HTML HEADLINES ----------------------------------------------------------------------------------------------------------------------------------------------------------
-
-1. **Role of Headlines:**
+# HTML HEADLINES
    - Headlines, titles, and subheadings are crucial for dividing content into digestible chunks and conveying the page's structure.
    - On landing pages, headlines often serve as clickable titles leading to further information.
 
@@ -67,7 +65,7 @@
    - Leveraging all six levels can significantly enhance content structure and coherence.
 
 
-# HTML LISTS ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+# HTML LISTS 
 
 # Types of HTML Lists:
 HTML supports three types of lists: unordered lists, ordered lists, and definition lists.
@@ -96,8 +94,7 @@ HTML supports three types of lists: unordered lists, ordered lists, and definiti
 -Indentation of list items for better code readability, although it doesn't affect webpage appearance.
 -Default appearance of list markers determined by the browser, but can be styled using CSS
 
-# HTML QUOTES -------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+# HTML QUOTES
 1. **Block Quotes:**
    - Represented by the `<blockquote>` element.
    - Used for enclosing longer quotes, providing semantic meaning.
@@ -144,7 +141,7 @@ HTML supports three types of lists: unordered lists, ordered lists, and definiti
    - A more in-depth exploration of HTML attributes promised in a later section.
 
 
-# HTML Code, `pre`, and `br` Elements: -----------------------------------------------------------------------------------------------------------------
+# HTML Code, `pre`, and `br` Elements: 
 
 1. **Using `<code>` Element:**
    - Utilized to showcase code on a webpage.
@@ -182,7 +179,7 @@ HTML supports three types of lists: unordered lists, ordered lists, and definiti
   
 
 
-  # HTML SUPERCRIPTS, SUBSCRIPTS, & SMALL TEXTX: -----------------------------------------------------------------------------------------------------------------------
+  # HTML SUPERCRIPTS, SUBSCRIPTS, & SMALL TEXTX:
 
 1. **Subscripts and Superscripts:**
    - Subscripts are characters set below the normal baseline for text.
@@ -218,7 +215,7 @@ HTML supports three types of lists: unordered lists, ordered lists, and definiti
   
 
 
-   # TROUBLESHOOTING & DEBUGGING HTML CODE: ---------------------------------------------------------------------------------------------------------------------------
+   # TROUBLESHOOTING & DEBUGGING HTML CODE: 
 
 1. **Using Browser Developer Tools:**
    - Browsers like Firefox provide developer tools that offer insights into a website's code and performance.
@@ -254,8 +251,7 @@ HTML supports three types of lists: unordered lists, ordered lists, and definiti
    - Helps in understanding how browsers interpret and process HTML, offering a practical debugging solution.
 
 
-   # HTML ATTRIBUTES: ---------------------------------------------------------------------------------------------------------------------------
-
+   # HTML ATTRIBUTES: 
 1. **Introduction to HTML Attributes:**
    - HTML elements have a basic version but gain additional capabilities through attributes.
    - Some attributes are specific to certain elements, while others work with multiple elements.
@@ -283,8 +279,7 @@ HTML supports three types of lists: unordered lists, ordered lists, and definiti
    - Comprehensive lists of Global Attributes can be found on MDM web docs.
    - These attributes enhance web page elements and improve user interaction.
 
-# HTML  ARIA Roles: --------------------------------------------------------------------------------------------------------------------------------------------------------
-
+# HTML  ARIA Roles: 
 1. **Introduction to ARIA Roles:**
    - ARIA Roles are additional attributes added to HTML elements to enhance their meaning for assistive technologies like screen readers and braille displays.
    - The primary goal is to use proper HTML elements for content meaning, but compromises may be necessary for accessibility.
@@ -315,8 +310,7 @@ HTML supports three types of lists: unordered lists, ordered lists, and definiti
    - ARIA is particularly valuable when working with complex interfaces or teams struggling with semantic HTML.
 
 
-# FORMATTING HTML: ----------------------------------------------------------------------------------------------------------------------------------------------------
-
+# FORMATTING HTML: 
 1. **Whitespace Handling in HTML:**
    - HTML generally ignores spaces, tabs, and line breaks, except in specific cases like `<pre>`, `<code>`, `<textarea>`, or when modified by CSS.
    - Extra spaces and indentations usually don't matter to browsers and are often ignored.
@@ -340,7 +334,7 @@ HTML supports three types of lists: unordered lists, ordered lists, and definiti
    - Browsers accommodate various formatting options for self-closing elements, allowing flexibility in writing HTML. The choice of using a closing slash is up to personal preference.
   
 
-# UNUSUAL CHARACTERS: -------------------------------------------------------------------------------------------------------------------------------------------------------
+# UNUSUAL CHARACTERS:
 
 1. **Handling <, >, and &:**
    - In HTML, the symbols `<`, `>`, and `&` are significant characters.
@@ -361,8 +355,7 @@ HTML supports three types of lists: unordered lists, ordered lists, and definiti
    - They offer a solution for handling characters not easily accessible on the keyboard, providing an alternative to copying and pasting or learning keyboard commands.
      
   
-# HTML LINKS: ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+# HTML LINKS:
 1. **Introduction to Web Links:**
    - Web links are now commonplace, encountered throughout online experiences in navigation bars, menus, teaser cards, and clickable article titles.
    - The concept of linking, hypertext, and hypermedia has been integral to computing innovation since the 1960s, leading to the birth of the web.
@@ -392,8 +385,7 @@ HTML supports three types of lists: unordered lists, ordered lists, and definiti
    - The creation of links, utilizing absolute URLs and protocols like HTTP and HTTPS, was one of the most significant inventions in the early days of the web.
   
 
-   # HTML URL PATHWAYS:----------------------------------------------------------------------------------------------------------------------------------------------------
-
+   # HTML URL PATHWAYS:
 1. **Absolute and Relative URLs:**
    - Absolute URLs point to a specific location on the web and include the full domain, while relative URLs are based on the current file's location.
    - When working locally or on different servers, using relative URLs allows flexibility in directing links to local copies or testing servers.
@@ -428,8 +420,7 @@ HTML supports three types of lists: unordered lists, ordered lists, and definiti
    - Using folders and index.html files can help create clean and user-friendly URLs in web development.
   
 
-# HTML NAVIGATION: ---------------------------------------------------------------------------------------------------------------------------------------------------
-
+# HTML NAVIGATION: 
 1. **Creating Main Navigation:**
    - Main navigation bars or menus can be created by wrapping each link in an "li" element, enclosing the list of links in a "ul" element, and then encompassing the entire menu in a "nav" element.
    - Applying CSS styling enhances the visual appearance of the menu.
@@ -456,7 +447,7 @@ HTML supports three types of lists: unordered lists, ordered lists, and definiti
    - Careful consideration of actions and the layering of semantic meaning into content guides the selection of the right approach for each project.
    - There is no one-size-fits-all approach, and choices depend on specific circumstances and desired rendering.
   
-   # HTML Working with Graphics and Images--------------------------------------------------------------------------------------------------------------------
+   # HTML Working with Graphics and Images
       
    - The choice of image file format is crucial for webpages to ensure compatibility with web browsers.
    - There are various file formats available, and new ones are continuously being developed to find the ideal balance between small file sizes and visually stunning images.
@@ -511,4 +502,125 @@ HTML supports three types of lists: unordered lists, ordered lists, and definiti
 - The use of "figure" and "figcaption" elements goes beyond a regular paragraph or a generic div, helping search engines and AI understand the connection between these content pieces.
 - Figures are versatile and not limited to images; they can be used for various visual elements, such as interactive graphics or any content that requires a caption for illustration or concept demonstration.
 
+
+# WORKING WITH MEDIA
+
+
+1. **Audio Element Basics:**
+   - The audio element in HTML has both an opening and a closing tag, distinguishing it from the image element.
+   - A source attribute is used to provide the URL of the audio file.
+
+2. **Adding Controls:**
+   - To enable built-in audio player controls (play button, timeline, volume control), add the "controls" attribute to the audio element.
+
+3. **Custom Controls with JavaScript:**
+   - While built-in controls are convenient, there is an option to create custom controls using JavaScript and the HTML media element API.
+
+4. **Additional Attributes:**
+   - Other attributes can enhance the audio element, such as:
+     - "loop": Makes the file repeat from the beginning once it reaches the end.
+     - "autoplay": Automatically plays the audio as soon as the page loads (use cautiously due to user preferences).
+
+5. **Multiple Source Elements:**
+   - The audio element can have both an opening and closing tag because the source element can be used to specify multiple audio files.
+   - This is useful for providing fallbacks for different browsers or supporting new file formats not universally supported.
+
+6. **Supporting Multiple Formats:**
+   - By placing the source attribute on separate source elements, multiple audio file formats can be supported.
+   - Common formats include MP3 and OGG, but it's crucial to understand the syntax for supporting multiple formats.
+
+7. **Fallback Text:**
+   - Fallback text within the audio element is displayed if the browser doesn't understand the audio element at all.
+   - HTML's resilience allows a single set of code to cater to various browsers and provide a suitable user experience.
+
+8. **Resilience and User Experience:**
+   - The audio element is a powerful tool for embedding audio files and a player on a webpage, showcasing HTML's versatility in providing functionality without extensive custom coding.
+
+
+# WORKING WITH VIDEO IN HTML
+
+1. **HTML Video Element Basics:**
+   - The HTML video element is used to embed videos on web pages.
+   - Like the audio element, it has both opening and closing tags.
+
+2. **Source Attribute and Controls:**
+   - Use the source attribute to specify the video file.
+   - Adding the "controls" attribute creates a default video player with play, pause, and other controls.
+
+3. **Video Encoding and Codecs:**
+   - Video files require encoding to compress data for efficient internet transmission.
+   - Different codecs (e.g., H.264) are used, with H.264 being widely supported but proprietary and requiring licensing fees.
+
+4. **Open Source Codecs - WebM and AV1:**
+   - Efforts have been made to develop open and non-patented video codecs.
+   - WebM and AV1 are potential alternatives, with AV1 considered superior and believed to be free of royalty charges.
+
+5. **Multiple Source Files:**
+   - The video element allows multiple source files, accommodating different codecs like H.264, WebM, and potentially AV1.
+   - The browser plays the first compatible file it recognizes.
+
+6. **Challenges with Video Sizes:**
+   - HTML lacks a built-in mechanism for sending different video sizes based on network conditions.
+   - Adaptive bitrate streaming, used by major streaming platforms, addresses this by dynamically adjusting resolution based on factors like network speed.
+
+7. **Adoption of Embed Codes from Hosting Services:**
+   - Due to the complexity of adaptive streaming, websites often use embed codes from video hosting services.
+   - This simplifies the process and leverages the capabilities of hosting services for video delivery.
+
   
+ # WORKING WITH CAPTIONS AND SUBTITLES
+
+1. **Importance of Captions:**
+   - Captions and subtitles enhance accessibility for individuals with hearing difficulties or those in situations where audio cannot be used.
+
+2. **Web Video Text Tracks (WebVTT):**
+   - The track element is used to add captions to a video player.
+   - WebVTT (Web Video Text Tracks) is a file format for captions, represented by text files with a .vtt extension.
+
+3. **Adding Captions to Video:**
+   - Insert a track element within the video element to link to a WebVTT file.
+   - Use the source attribute to specify the file, kind attribute for captions, label attribute for display, source lang for language, and default attribute for the default choice.
+
+4. **Multiple Subtitle Options:**
+   - Multiple subtitle options can be provided by adding additional track elements with different language options.
+   - Each track element includes attributes such as kind, source lang, label, and default as needed.
+
+5. **Other Options for the kind Attribute:**
+   - "descriptions" can be used to provide a vtt file describing visual elements for users with visual impairments.
+   - "chapters" allows users to jump to specific sections of the video based on a text file listing different sections.
+
+6. **YouTube and Vimeo Captioning:**
+   - Platforms like YouTube and Vimeo allow users to upload caption files, providing similar functionality.
+   - Including captions is often required by law and contributes to increased accessibility and a broader audience base.
+
+
+  # EMBEDDING MEDIA VIA Iframes:
+
+1. **Embedding Content:**
+   - Embedding involves placing content from one website into another website's page.
+   - Various types of content, such as maps, code demos, slide decks, and videos, can be embedded onto a webpage.
+
+2. **Benefits of Embedding:**
+   - Embedding allows the inclusion of complex content without dealing with technical aspects.
+   - Services like YouTube provide tools and players that can be embedded onto a website.
+
+3. **Understanding HTML for Embedding:**
+   - While detailed knowledge may not be necessary, understanding HTML helps recognize and adjust certain attributes.
+   - The `<iframe>` element is commonly used for embedding, with attributes like height, width, and src for adjusting the dimensions and specifying the content source.
+
+4. **Security Considerations:**
+   - When using a content management system (CMS) like WordPress or Drupal, there may be specific ways to allow embedding from trusted sources.
+   - Consider security aspects related to iframes, especially if multiple users will be adding content to the system.
+   - Be cautious about allowing arbitrary iframes without proper security measures, especially in a multi-user environment.
+
+5. **Example with YouTube Embedding:**
+   - YouTube provides an embed link that includes an `<iframe>` element with attributes like height, width, and src.
+   - Adjusting these attributes allows customization of the embedded player's appearance and functionality.
+
+6. **CMS Considerations:**
+   - In CMS platforms, consult guidelines or administrators for embedding content like YouTube videos, as they may have specific methods or restrictions.
+
+7. **Security Measures:**
+   - Be mindful of security when embedding content, especially from external sources.
+   - Assess the risks and implement necessary measures, especially in a collaborative or multi-user environment.
+   
