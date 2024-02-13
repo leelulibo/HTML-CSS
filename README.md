@@ -979,3 +979,19 @@ HTML supports three types of lists: unordered lists, ordered lists, and definiti
   - Trying to memorize everything about HTML is impractical, and it's normal to forget details.
   - Embrace a mindset of continuous learning and improvement, utilizing online resources to look up information as needed.
   - By striving for accuracy and improvement, developers can create better projects and enhance the user experience for their audience.
+  - 
+
+
+
+
+
+  # INTRODUCTION TO CSS
+  
+- CSS (Cascading Style Sheets) is a type of style sheet language used to describe the presentation of a document written in HTML (Hypertext Markup Language).
+- Style sheets, typically saved as separate CSS files, contain rules that define how HTML elements are displayed on a webpage, enhancing its visual appeal.
+- HTML and CSS are closely interconnected, with HTML providing the structure of the webpage and CSS determining its appearance.
+- HTML elements like paragraphs, headings, lists, and links are recognized within HTML, but they lack aesthetic appeal without CSS.
+- CSS consists of selectors and declaration blocks. Selectors target specific HTML elements, while declaration blocks contain styling rules to be applied to those elements.
+- Cascading in CSS refers to the process of applying multiple styles to the same HTML element, with later styles overriding earlier ones. However, the discussion on cascading is kept simple in this context.
+
+- 
