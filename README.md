@@ -983,8 +983,6 @@ HTML supports three types of lists: unordered lists, ordered lists, and definiti
 
 
 
-
-
   # INTRODUCTION TO CSS
   
 - CSS (Cascading Style Sheets) is a type of style sheet language used to describe the presentation of a document written in HTML (Hypertext Markup Language).
@@ -994,4 +992,74 @@ HTML supports three types of lists: unordered lists, ordered lists, and definiti
 - CSS consists of selectors and declaration blocks. Selectors target specific HTML elements, while declaration blocks contain styling rules to be applied to those elements.
 - Cascading in CSS refers to the process of applying multiple styles to the same HTML element, with later styles overriding earlier ones. However, the discussion on cascading is kept simple in this context.
 
-- 
+
+  # Identify a Color Scheme
+
+- Choosing a color scheme for a website is crucial, even though it may seem simple.
+- Canva provides a user-friendly approach to creating color palettes, suitable for those without design backgrounds.
+- Canva offers three methods for generating color palettes:
+  1. Extracting colors from an uploaded image, such as a photo of donuts or people in a canoe.
+  2. Trying their demo images and selecting a color scheme that fits.
+  3. Creating a custom color palette by selecting an initial color, which generates complementary, monochromatic, analogous, triadic, or tetradic color combinations.
+- Canva allows users to adjust saturation and explore various color combinations.
+- Users can also browse categorized and keyword-filtered color palettes or upload images to generate palettes based on them.
+- The goal is to find a color scheme that suits the website's theme and enhances its visual appeal.
+
+# Formatting Color in CSS
+
+- After selecting a color palette, incorporating it into code involves understanding different methods of representing colors.
+- Named colors are convenient but limited, with only around 130 available in CSS.
+- Hex codes, or hexadecimal values, are the most common way to represent colors online, consisting of six digits representing red, green, and blue channels.
+- Canva's color palettes also display hex values, which are widely used in web development.
+- Hex values can be shortened if each two-digit pair is identical, such as "7778899" becoming "789".
+- RGB format represents colors using Base 10 numbers for red, green, and blue channels, and may include an alpha channel for transparency.
+- Other color formats like HSL or HSLA may be used occasionally, particularly in platforms like Squarespace.
+- Converting between color formats is easily done using online tools like Google's color picker, DuckDuckGo, or Color Hex website, which also provides additional color-related information and resources.
+
+  # Background and Text Color in CSS
+
+- Incorporating colors into CSS involves selecting appropriate colors for text and background elements.
+- Named colors and color palettes are two common approaches for choosing colors.
+- Using a named color chart, you can easily find and replace colors in your CSS code.
+- Canva offers color palettes with assigned names, but it's essential to use the corresponding hex values in CSS.
+- When choosing colors from Canva, note that there may be slight discrepancies between the shades in Canva and those in the CSS chart.
+- To change background colors, use the "background-color" property and specify a hex color code.
+- Ensure readability by adjusting text colors accordingly, such as setting white text on a dark background.
+- Apply background colors not only to text elements but also to other HTML elements like unordered lists or even the entire webpage body.
+- By selecting colors thoughtfully, you can create visually appealing and readable web designs.
+
+
+  # Understanding Images in CSS
+
+- Webpages frequently include images, which can be added using HTML or CSS.
+- Common web image formats include GIF, PNG, JPEG, and the newer WebP format.
+- GIFs are suitable for limited colors, transparency, and animation; PNGs offer more colors and transparency but no animation; JPEGs are optimized for photographs with millions of colors but lack transparency and animation.
+- WebP is a newer image format that offers high compression for smaller file sizes, leading to faster website loading times.
+- It's essential to choose the right image format and optimize images for faster loading by adjusting dimensions, trimming unnecessary parts, and reducing file sizes.
+- Tools like tinypng.com or Adobe Photoshop can be used to reduce image file sizes without losing quality.
+- In HTML, images are added using the `<img>` element and are crucial for conveying the page's message, such as logos or social media icons.
+- In CSS, background images can be included, which are decorative and not essential to the webpage's text. Background images can repeat or display only a portion of the image based on configuration.
+
+  # Working with Background Images in CSS
+
+- Background images can be added to webpages using CSS.
+- Preview the images before use to ensure suitability for the webpage.
+- Apply background images to elements like the body or specific sections, adjusting properties like size, tiling, and positioning.
+- Use the shorthand property "background" for flexibility in setting properties like repeat, position, and attachment.
+- Adjust properties like "repeat-X" and "repeat-Y" to control the direction of tiling.
+- Control the starting position of background images using values like "center," "right," or "left."
+- Adjust the height of the body element to position background images effectively, such as using percentages like "97vh."
+- Experiment with different background images and properties to enhance visual appeal.
+- Use percentages to fine-tune the position of background images on the page.
+- These techniques provide inspiration for incorporating background images effectively in webpage design, enhancing aesthetics and user experience.
+
+  # Practice Exercise: Style This Web Page
+
+- In a practice exercise, HTML code containing headings (H1, H2, H3) and paragraphs is provided for styling.
+- Learners are encouraged to choose a color palette from Canva and apply CSS concepts to style the webpage.
+- Concepts covered include modifying text and background colors using different formats, applying styles like uppercase and bold, and adding background images.
+- Learners are encouraged to explore other CSS properties beyond those covered in the course, consulting documentation and experimenting.
+- In the practice solution, the body background is set to display a repeating maple leaf image at the bottom of the page, with text styled in brown to match an autumn color palette.
+- Headings are styled with colored backgrounds and centered text using the text-align property, with specific styling for H1, H2, and H3 elements.
+- Suggestions for improvement include font choice and addressing spacing issues, which will be covered in future chapters.
+- Learners are encouraged to experiment and have fun while styling the webpage.
