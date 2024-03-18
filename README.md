@@ -1182,3 +1182,131 @@ HTML supports three types of lists: unordered lists, ordered lists, and definiti
 -Functions help in writing modular code by allowing programmers to divide a large program into smaller, manageable functions.
 -JavaScript supports writing custom functions in addition to built-in functions like alert() and write().
 -Functions are defined using the function keyword, followed by a unique name, a list of parameters (optional), and a block of statements enclosed in curly braces.
+
+# BOOLEANS:
+
+-Booleans in JavaScript represent two values: true or false.
+-They are often used in conditional statements and logical expressions to control the flow of a program.
+-Booleans are essential for making decisions and executing different blocks of code based on certain conditions.
+-They are the result of many comparison and logical operations in JavaScript.
+-Common use cases include conditionals, loop control, and function return values.
+
+# CONDITIONALS
+-Conditionals in JavaScript are used to execute different code blocks based on specified conditions.
+-The primary conditional statements in JavaScript are if, else if, and else.
+-The if statement checks a condition and executes a block of code if the condition is true.
+-The else if statement allows you to specify additional conditions to test if the previous conditions were false.
+-The else statement provides a default block of code to execute if none of the previous conditions were true.
+-Nested conditionals involve placing one conditional statement within another.
+-Ternary operator (condition ? exprIfTrue : exprIfFalse) provides a concise way to write simple conditional statements.
+-Switch statement is used for multi-way branching based on the value of an expression
+
+# Type Conversions:
+
+-JavaScript automatically performs type conversions in many cases, like with operators and functions.
+-String conversion occurs when converting a value to its string representation, either implicitly or explicitly using String(value).
+-Numeric conversion happens automatically in mathematical operations, but you can explicitly use Number(value) to convert values to numbers.
+-Boolean conversion is straightforward: values like 0, "", null, undefined, and NaN become false, while others become true.
+-Understanding type conversions is crucial for manipulating data effectively in JavaScript.
+
+
+# Number Formatting:
+
+-JavaScript offers various methods for formatting numbers, each serving different purposes.
+-Methods like toString(), toExponential(), toFixed(), and toPrecision() help format numbers as strings with different precision and notation.
+-These methods are used to convert numbers to strings in various formats, such as exponential notation or fixed decimal places.
+-Global methods like parseInt() and parseFloat() are used specifically for converting strings to integers or floating-point numbers.
+valueOf() is used to return a number as a primitive value.
+-Understanding number formatting methods is essential for displaying data accurately and efficiently in JavaScript applications.
+
+
+# Document Object Model (DOM):
+- The DOM is an Application Programming Interface (API) for HTML and XML documents, providing a structured representation of the document.
+- It defines how the structure of the document can be accessed and manipulated by scripts or programming languages.
+- Allows web developers to access web pages as structured groups of nodes, connecting them to scripts.
+- Includes core objects associated with HTML elements, the browser window, and homemade objects created within the JavaScript Object Model.
+- Common JavaScript objects within the DOM include `window`, `document`, `form`, and `image`.
+
+# JavaScript Syntax:
+- JavaScript syntax involves accessing objects, properties, and methods using the "dot syntax", where references include every object containing the target, separated by a dot.
+- Objects in JavaScript represent scriptable HTML elements or core language entities.
+- Properties are characteristics of objects, similar to HTML tag attributes, and can also be objects themselves.
+- Methods are actions applied directly to objects, causing HTML documents to react to user interactions.
+- Methods may require parameters, which are values needed for the method to accomplish its task.
+- Common JavaScript methods include `alert()`, `write()`, and `focus()`.
+
+# Core APIs in the DOM:
+- `document` and `window` objects are commonly used in DOM programming, representing the document root and browser window respectively.
+- Element objects inherit from the Node interface, providing methods and properties for individual elements.
+- Common DOM APIs include methods like `getElementById()`, `getElementsByTagName()`, and `createElement()`.
+- Window object methods like `onload`, `dump()`, and `scrollTo()` are also frequently used.
+
+
+# Calling Functions:
+- JavaScript functions can be called from within other functions, allowing for nested function calls.
+- This enables the creation of separate functions to perform specific tasks, which can then be executed together as a complete process.
+- Functions are invoked using parentheses, and parameters can be passed to them if required.
+
+# Creating Objects with User-defined Functions:
+- JavaScript is object-based, and objects can be created using user-defined functions.
+- Two steps are involved in creating a new object:
+  1. Defining the object in a user-defined function.
+  2. Using the `new` keyword to instantiate the object with a call to the object function.
+- Objects can be created with properties defined during instantiation.
+
+# Defining Properties for Objects:
+- Properties for objects can be defined after the object is created by assigning a value to a property.
+- Alternatively, properties can be defined during object creation by including property names in the object function.
+- JavaScript imposes no limitations on the number of properties an object can have.
+
+# Operators:
+- JavaScript supports various types of operators, including assignment, comparison, arithmetic, bitwise, logical, string, conditional, comma, unary, and relational operators.
+- Assignment operators assign a value to a variable or property.
+- Comparison operators compare operands and return a logical value based on the comparison result.
+- Arithmetic operators perform mathematical operations on numerical values.
+- Bitwise operators manipulate operands as a set of 32 bits.
+- Logical operators operate on Boolean values.
+- String operators concatenate strings.
+- The conditional operator is a ternary operator that returns one of two values based on a condition.
+- The comma operator evaluates multiple expressions and returns the value of the last expression.
+- Unary operators perform operations on a single operand.
+- The typeof operator returns the type of its operand.
+- The void operator evaluates an expression without returning a value.
+- Relational operators compare operands and return a Boolean value based on the comparison result.
+- The instanceof operator checks whether an object is an instance of a specified object type.
+- Operator precedence determines the order in which operators are applied when evaluating an expression.
+
+# REGEX
+-A regular expression is a sequence of characters that forms a search pattern. 
+-The search pattern can be used for text search and text replace operations. 
+-A regular expression is a sequence of characters that forms a search pattern. 
+-When you search for data in a text, you can use this search pattern to describe what you are searching for. 
+-A regular expression can be a single character, or a more complicated pattern. 
+-Regular expressions can be used to perform all types of text search and text replace operations. \
+
+
+# SWITCH
+
+-The switch statement is used to perform different actions based on different conditions. 
+-The switch expression is evaluated once. 
+-The value of the expression is compared with the values of each case. 
+-If there is a match, the associated block of code is executed. 
+-If there is no match, the default code block is executed. 
+
+# WINDOW
+-The window object in JavaScript represents the browser window or tab in which the script is running. It serves as the global object for client-side JavaScript code. 
+-The window object is automatically created by the browser when a web page is loaded. It represents the browser window or tab that contains the HTML document.
+-While the window object is associated with the browser environment, it also serves as the global object for JavaScript code running in that environment. This means that properties and methods of the window object can be accessed directly without explicitly referencing window.
+-alert(): Displays an alert dialog box with a message and an OK button.
+-confirm(): Displays a confirmation dialog box with a message, an OK button, and a Cancel button. It returns true if the user clicks OK and false if the user clicks Cancel.
+-prompt(): Displays a dialog box prompting the user for input. It takes an optional second parameter as the default input value. It returns the entered value as a string if the user clicks OK, and null if the user clicks Cancel.
+-open(): Opens a new browser window or tab. It takes optional parameters for specifying the URL, window name, and window features (e.g., size, position, etc.).
+-close(): Closes the current browser window or tab.
+-setTimeout(): Executes a function or evaluates an expression after a specified delay (in milliseconds). It returns a unique identifier (ID) for the timeout, which can be used to cancel the timeout using the clearTimeout() method.
+-write("string"):
+-Writes the specified string directly to the HTML document at the current position of the document. It does not parse the string as HTML. If document.write() is called after the page has finished loading, it will overwrite the entire document.writeln("string"):
+-Similar to write(), but adds a newline character (\n) after writing the specified string. This method is commonly used to write multiple lines of text to the document.getElementById(id):
+-Returns a reference to the first element in the document with the specified id attribute. This method allows you to access a specific element by its unique id value.getElementsByName(name):
+-Returns a collection of all elements in the document with the specified name attribute. This method is useful for accessing elements grouped by a common name attribute.getElementsByTagName(tagName):
+-Returns a collection of all elements in the document with the specified tag name (e.g., "div", "p", "a"). It allows you to access all elements of a specific type in the document.getElementsByClassName(className):
+-Returns a collection of all elements in the document that have the specified class name. It allows you to access elements that belong to a particular CSS class.
