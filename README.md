@@ -1310,3 +1310,226 @@ valueOf() is used to return a number as a primitive value.
 -Returns a collection of all elements in the document with the specified name attribute. This method is useful for accessing elements grouped by a common name attribute.getElementsByTagName(tagName):
 -Returns a collection of all elements in the document with the specified tag name (e.g., "div", "p", "a"). It allows you to access all elements of a specific type in the document.getElementsByClassName(className):
 -Returns a collection of all elements in the document that have the specified class name. It allows you to access elements that belong to a particular CSS class.
+
+
+
+# On-event Handlers
+
+DOM elements offer on-event handlers to manage reactions to events.
+Events can be interactive (e.g., clicks, key presses) or non-interactive (e.g., document load).
+Handlers are named according to the event they respond to (e.g., onclick, onkeypress).
+Setting Event Handlers:
+
+Handlers can be set using HTML attributes (e.g., onclick="handleClick(event)").
+Alternatively, they can be set using JavaScript properties (e.g., element.onclick = function(event) { ... }).
+Each object can have only one handler per event, but this handler can call multiple sub-handlers.
+addEventListener() is preferred for attaching multiple independent event handlers.
+Invocation and Control:
+
+On-event handlers are invoked automatically based on events, not by the programmer.
+Handlers can be invoked explicitly by the programmer (e.g., mybutton.onclick(myevent)).
+The return value from the handler determines if the event is cancelled, as per HTML specification.
+Event Handler Parameters and Binding:
+
+Parameters of event handlers vary depending on the event type.
+The 'this' keyword inside the handler refers to the DOM element it's registered on.
+Return value from the handler determines event cancellation, following HTML specification guidelines.
+Terminology:
+
+"Event handler" may refer to any function or object notified of events.
+Specifically, it can refer to registering listeners via on... attributes or properties.
+Event Listening Methods:
+
+"Event listener" refers to functions registered via EventTarget.addEventListener().
+"Event handler" refers to functions registered via on... attributes or properties.
+addEventListener() Method:
+
+This method sets up a function called whenever the specified event occurs.
+It can be used on various targets like Element, Document, Window, or any object supporting events.
+addEventListener() adds a function or object implementing EventListener to the list of event listeners for a specified event type.
+
+# commonly used event handlers
+
+onabort: Triggered when an event is aborted, like stopping media download.
+oncancel: Handles cancel events.
+oncanplay: Fired when media can start playing but hasn't due to buffering.
+oncanplaythrough: Estimates media can play without interruption.
+onchange: Reacts to changes in the object followed by a focus change.
+onclick: Fired when the object is clicked.
+oncuechange: Deals with cuechange events.
+ondblclick: Triggered by a double-click on the object.
+ondurationchange: Reacts to changes in media length.
+onemptied: Fired when a media resource becomes empty, like due to a network error.
+onended: Fired when media playback reaches its end.
+oninput: Handles input events.
+oninvalid: Reacts to invalid events.
+onkeydown/onkeypress/onkeyup: Handle keyboard key events.
+onloadeddata/onloadedmetadata/onloadstart: Fired during media loading stages.
+onmousedown/onmouseenter/onmouseleave/onmousemove/onmouseout/onmouseover/onmouseup/onmousewheel: Manage mouse events.
+onpause/onplay/onplaying/onprogress: Manage media playback events.
+onratechange: Triggered when the playback rate changes.
+onreset: Deals with reset events.
+onseeked/onseeking: Handle seeking events.
+onselect: Fired when content within an object is selected.
+onshow: Reacts to show events.
+onstalled: Fired when media download stalls.
+onsubmit: Triggered upon form submission.
+onsuspend: Reacts when media download is suspended.
+ontimeupdate: Fired when media playback position changes.
+ontoggle: Handles toggle events.
+onvolumechange: Reacts to volume or mute changes.
+onwaiting: Fired when the next media frame is not yet available.
+
+# Date Object 
+  - JavaScript's Date object stores date and time information.
+  - It offers built-in methods for formatting and managing date data.
+  - A new Date instance without arguments corresponds to the current date and time by default.
+
+- Date Representation:
+  - Dates are represented according to the computer's system settings.
+  - Dates can also be represented as a timestamp, which is the number of milliseconds since January 1st, 1970 (Epoch time).
+
+- Date Creation:
+  - Four formats exist for creating a new Date instance:
+    1. Default current date and time.
+    2. Using a timestamp.
+    3. Using a date string.
+    4. Specifying particular dates and times.
+
+- Date Retrieval:
+  - Various methods exist to retrieve components of a date such as year, month, day, etc.
+  - These methods return components relative to the local timezone.
+  - Methods start with "get" and return the respective number associated with the date component.
+
+- Date Modification:
+  - For each "get" method, there exists a corresponding "set" method to modify date components.
+  - Methods start with "set" and allow modification of date components.
+
+- Date Methods with UTC:
+  - UTC (Coordinated Universal Time) methods calculate time based on the UTC standard.
+  - UTC methods are similar to regular methods but calculate time in UTC.
+  - They provide consistency across timezones.
+
+- Adding and Subtracting from a Given Date:
+  - Date setters expect values within appropriate intervals.
+  - Values outside the expected range may roll over into the next or preceding month.
+  - Rounding behavior can be utilized based on preference.
+
+# Keyboard handler
+
+
+- **Keydown Event (onkeydown)**:
+  - Occurs when a user presses down a key on the keyboard.
+  - Handled with the `onkeydown` event handler.
+  - Example code snippet:
+
+```javascript
+document.addEventListener("keydown", function(event) {
+  alert("Key down: " + event.key);
+});
+```
+
+- **Keyup Event (onkeyup)**:
+  - Occurs when a user releases a key on the keyboard.
+  - Handled with the `onkeyup` event handler.
+  - Example code snippet:
+
+```javascript
+document.addEventListener("keyup", function(event) {
+  alert("Key up: " + event.key);
+});
+```
+
+- **Keypress Event (onkeypress)**:
+  - Occurs when a user presses down a key on the keyboard that has a character value associated with it.
+  - Some keys like Ctrl, Shift, Alt, Esc, Arrow keys, etc. do not generate a keypress event but do generate keydown and keyup events.
+  - Handled with the `onkeypress` event handler.
+  - Example code snippet:
+
+```javascript
+document.addEventListener("keypress", function(event) {
+  alert("Key press: " + event.key);
+});
+```
+# Form events
+
+- **Focus Event (onfocus)**:
+  - Occurs when an element receives focus on a web page.
+  - Handled with the `onfocus` event handler.
+  - Example code snippet:
+
+```javascript
+document.getElementById("myInput").addEventListener("focus", function(event) {
+  event.target.style.backgroundColor = "yellow";
+});
+```
+
+- **Blur Event (onblur)**:
+  - Occurs when an element loses focus.
+  - Handled with the `onblur` event handler.
+  - Example code snippet:
+
+```javascript
+document.getElementById("myInput").addEventListener("blur", function(event) {
+  alert("Input lost focus!");
+});
+```
+
+- **Change Event (onchange)**:
+  - Occurs when the value of a form element changes.
+  - Handled with the `onchange` event handler.
+  - Example code snippet:
+
+```javascript
+document.getElementById("mySelect").addEventListener("change", function(event) {
+  alert("Selected option changed!");
+});
+```
+
+- **Submit Event (onsubmit)**:
+  - Occurs when a form is submitted.
+  - Handled with the `onsubmit` event handler.
+  - Example code snippet:
+
+```javascript
+document.getElementById("myForm").addEventListener("submit", function(event) {
+  alert("Form submitted!");
+});
+```
+
+# document/window events
+
+- **Load Event (onload)**:
+  - Occurs when a web page has finished loading in the web browser.
+  - Handled with the `onload` event handler.
+  - Example code snippet:
+
+```javascript
+window.onload = function() {
+  alert("Page finished loading!");
+};
+```
+
+- **Unload Event (onunload)**:
+  - Occurs when a user leaves the current web page.
+  - Handled with the `onunload` event handler.
+  - Example code snippet:
+
+```javascript
+window.onunload = function() {
+  alert("Leaving the page!");
+};
+```
+
+- **Resize Event (onresize)**:
+  - Occurs when a user resizes the browser window.
+  - Also occurs when the browser window is minimized or maximized.
+  - Handled with the `onresize` event handler.
+  - Example code snippet:
+
+```javascript
+window.onresize = function() {
+  alert("Window resized!");
+};
+```
+
