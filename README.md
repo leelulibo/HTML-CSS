@@ -1311,7 +1311,16 @@ valueOf() is used to return a number as a primitive value.
 -Returns a collection of all elements in the document with the specified tag name (e.g., "div", "p", "a"). It allows you to access all elements of a specific type in the document.getElementsByClassName(className):
 -Returns a collection of all elements in the document that have the specified class name. It allows you to access elements that belong to a particular CSS class.
 
+# Program flowchart symbols
 
+Program flowcharts are constructed with a set of standardised symbols that make it easier for persons other than the original programmer to read and maintain the program. 
+Below is a list of things that you should pay attention to when creating program flowcharts:
+
+-Using appropriate symbols
+-Flow direction that is inconsistent
+-Colour schemes/colour coding.
+-Having consistent symbol sizes
+-Having consistent spacing between your symbols
 
 # On-event Handlers
 
@@ -1574,3 +1583,15 @@ Consider loading script tags at the bottom of the HTML body section unless JavaS
 -Why SEO is Important: Organic search results cover significant digital real estate and are perceived as more credible by users, leading to higher click-through rates compared to paid advertisements. SEO offers long-term benefits and can drive substantial traffic without continuous funding.
 
 -Continued Importance of SEO: Despite advancements in search engine algorithms, SEO remains crucial for ensuring that content is properly indexed and displayed in search results, ultimately enhancing visibility and driving organic traffic to websites.
+
+# Content Distribution Network (CDN)
+
+A Content Distribution Network (CDN) improves website performance by allowing users worldwide to access content from servers closer to their location, reducing loading times. CDNs utilize proxy servers across the globe to achieve this. Common CDNs include CloudFront and CloudFlare. Additionally, optimizing above-the-fold content and script loading can enhance perceived performance. However, website optimization should be tailored to specific needs and bottlenecks, based on performance analysis, rather than applying generic solutions.
+
+-CDN improves website performance by minimizing loading times for users worldwide.
+-CDNs utilize proxy servers across the globe to achieve faster content delivery.
+-Common CDNs include CloudFront and CloudFlare.
+-Optimizing above-the-fold content and script loading can enhance perceived performance.
+-Website optimization should be tailored based on performance analysis rather than applying generic solutions.
+-There is no one-size-fits-all solution for website optimization; focus on addressing specific bottlenecks based on measurements.
+
